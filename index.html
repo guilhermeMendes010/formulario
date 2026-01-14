@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<form>
+
+    <div class="container">
+        <h1>Formulário </h1>
+
+        <div class="form-box">
+
+            <div class="form-left">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco">
+
+                <label for="estado">Estado</label>
+                <select id="estado">
+                    <option>Distrito Federal (DF)</option>
+                    <option>Acre (AC)</option>
+                    <option>Alagoas (AL)</option>
+                    <option>Amapá (AP)</option>
+                    <option>Amazonas (AM)</option>
+                    <option>Bahia (BA)</option>
+                    <option>Ceará (CE)</option>
+                    <option>Espírito Santo (ES)</option>
+                    <option>Goiás (GO)</option>
+                    <option>Maranhão (MA)</option>
+                    <option>Mato Grosso (MT)</option>
+                    <option>Mato Grosso do Sul (MS)</option>
+                    <option>Minas Gerais (MG)</option>
+                    <option>Pará (PA)</option>
+                    <option>Paraíba (PB)</option>
+                    <option>Paraná (PR)</option>
+                    <option>Pernambuco (PE)</option>
+                    <option>Piauí (PI)</option>
+                    <option>Rio de Janeiro (RJ)</option>
+                    <option>Rio Grande do Norte (RN)</option>
+                    <option>Rio Grande do Sul (RS)</option>
+                    <option>Rondônia (RO)</option>
+                    <option>Roraima (RR)</option>
+                    <option>Santa Catarina (SC)</option>
+                    <option>São Paulo (SP)</option>
+                    <option>Sergipe (SE)</option>
+                    <option>Tocantins (TO)</option>
+                </select>
+
+                <label for="gosta">O que você gosta de fazer?</label>
+                <select id="gosta" multiple>
+                    <option value="Jogar bola">Jogar bola</option>
+                    <option value="Assistir">Assistir</option>
+                    <option value="Dormir">Dormir</option>
+                    <option value="Academia">Academia</option>
+                    <option value="Comer">Comer</option>
+                    <option value="Estudar">Estudar</option>
+                </select>
+            </div>
+
+            <div class="form-right">
+                <label for="mensagem">Escreva uma mensagem:</label>
+                <textarea id="mensagem"></textarea>
+            </div>
+
+        </div>
+
+        <!-- BOTÃO DE ENVIAR -->
+        <button type="button" onclick="enviarFormulario()">
+            Enviar
+        </button>
+
+    </div>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
